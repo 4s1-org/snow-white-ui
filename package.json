@@ -46,6 +46,7 @@
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
     "@yellowgarbagebag/snow-white-dto": "^2.0.0",
+    "@yellowgarbagebag/snow-white-shared": "workspace:*",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.0",
     "moment-timezone": "^0.5.31",
