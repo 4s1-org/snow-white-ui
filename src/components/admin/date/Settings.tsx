@@ -1,7 +1,7 @@
 import React from 'react'
 import Api from '../../../utils/api'
 import Card from '../../common/Card'
-import { ITrafficSettingsDto, IDateSettingsDto } from '@yellowgarbagebag/snow-white-dto'
+import { ITrafficSettingsDto, IDateSettingsDto } from '@yellowgarbagebag/snow-white-shared'
 import moment from 'moment'
 import 'moment/locale/de'
 import Select from 'react-select'

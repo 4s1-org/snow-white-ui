@@ -1,5 +1,5 @@
 import React from 'react'
-import { ICarRoutesDto, ICarRouteDto } from '@yellowgarbagebag/snow-white-dto'
+import { ICarRoutesDto, ICarRouteDto } from '@yellowgarbagebag/snow-white-shared'
 import Api from '../../utils/api'
 import moment from 'moment'
 import Widget from '../common/Widget'

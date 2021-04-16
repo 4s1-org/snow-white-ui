@@ -1,6 +1,6 @@
 import React from 'react'
 import Api from '../../../utils/api'
-import { ICommonSettingsDto } from '@yellowgarbagebag/snow-white-dto'
+import { ICommonSettingsDto } from '@yellowgarbagebag/snow-white-shared'
 import Card from '../../common/Card'
 
 interface IState {

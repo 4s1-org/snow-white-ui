@@ -14,16 +14,15 @@
   "license": "ISC",
   "author": "Steffen",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "preinstall": "npx only-allow pnpm",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.ts\"",
     "lbt": "npm run lint && npm run build && npm run test",
     "lint": "eslint --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "test:cov": "react-scripts test --coverage --watchAll=false"
+    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "test": "echo no tests available"
   },
   "browserslist": {
     "production": [
@@ -40,18 +39,15 @@
   "prettier": "@hest-lab/eslint-config",
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
-    "@yellowgarbagebag/snow-white-dto": "^2.0.1",
     "@yellowgarbagebag/snow-white-shared": "workspace:*",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
@@ -66,7 +62,6 @@
   },
   "devDependencies": {
     "@hest-lab/eslint-config": "^1.5.0",
-    "@types/jest": "^26.0.22",
     "@types/node": "^14.14.37",
     "@types/react": "^16.14.5",
     "@types/react-dom": "^16.9.12",
@@ -74,5 +69,8 @@
     "@types/react-select": "^3.1.2",
     "eslint": "^7.23.0",
     "prettier": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
