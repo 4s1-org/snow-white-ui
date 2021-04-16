@@ -1,5 +1,5 @@
 import React from 'react'
-import { IFuelPriceStationDto } from '@yellowgarbagebag/snow-white-dto'
+import { IFuelPriceStationDto } from '@yellowgarbagebag/snow-white-shared'
 
 interface IState {
   name: string
