@@ -58,7 +58,7 @@
     "react-scripts": "4.0.3",
     "react-select": "^4.3.0",
     "typescript": "^4.2.4",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "2.1.0"
   },
   "devDependencies": {
     "@hest-lab/eslint-config": "^1.6.1",
