@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git@gitlab.com:yellow-garbage-group/snow-white.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Steffen",
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
