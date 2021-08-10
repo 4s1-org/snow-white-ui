@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faPlus } from '@fortawesome/free-solid-svg-icons'
 import Api from '../../../utils/api'
-import { IOpenStreetMapLocationDto } from '@yellowgarbagebag/snow-white-shared'
+import { IOpenStreetMapLocationDto } from '@yellowgarbagegroup/snow-white-shared'
 import Card from '../../common/Card'
 
 interface IState {
@@ -90,10 +90,7 @@ class LocationSearch extends React.Component<IProps, IState> {
     await this.doSearch()
   }
 
-  private async onBtnAddClick(
-    location: IOpenStreetMapLocationDto,
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): Promise<void> {
+  private async onBtnAddClick(location: IOpenStreetMapLocationDto, event: React.MouseEvent<HTMLButtonElement, MouseEvent>): Promise<void> {
     event.preventDefault()
     await this.doAddLocation(location)
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Api from '../../../utils/api'
 import Card from '../../common/Card'
-import { ITimetableSettingsDto, ITimetableStationDto } from '@yellowgarbagebag/snow-white-shared'
+import { ITimetableSettingsDto, ITimetableStationDto } from '@yellowgarbagegroup/snow-white-shared'
 import Select from 'react-select'
 
 interface IState {
@@ -105,9 +105,7 @@ class TimetableSettings extends React.Component<IProps, IState> {
                 isDisabled={!this.state.dto.isActive}
                 options={this.state.stations}
                 onChange={this.onSelectStationFromChange}
-                value={this.state.stations.filter(
-                  (station: ITimetableStationDto): boolean => station.id === this.state.dto.stationFromId,
-                )}
+                value={this.state.stations.filter((station: ITimetableStationDto): boolean => station.id === this.state.dto.stationFromId)}
                 getOptionLabel={(option: ITimetableStationDto): string => option.name}
                 getOptionValue={(option: ITimetableStationDto): string => option.id}
                 placeholder={'Bitte auswählen...'}
@@ -121,9 +119,7 @@ class TimetableSettings extends React.Component<IProps, IState> {
                 isDisabled={!this.state.dto.isActive}
                 options={this.state.stations}
                 onChange={this.onSelectStationToChange}
-                value={this.state.stations.filter(
-                  (station: ITimetableStationDto): boolean => station.id === this.state.dto.stationToId,
-                )}
+                value={this.state.stations.filter((station: ITimetableStationDto): boolean => station.id === this.state.dto.stationToId)}
                 getOptionLabel={(option: ITimetableStationDto): string => option.name}
                 getOptionValue={(option: ITimetableStationDto): string => option.id}
                 placeholder={'Bitte auswählen...'}
@@ -396,9 +392,7 @@ class TimetableSettings extends React.Component<IProps, IState> {
   }
 
   private async loadData(): Promise<void> {
-    const stations: Array<ITimetableStationDto> = await Api.get<Array<ITimetableStationDto>>(
-      '/v1/smartmirror/admin/timetable/stations',
-    )
+    const stations: Array<ITimetableStationDto> = await Api.get<Array<ITimetableStationDto>>('/v1/smartmirror/admin/timetable/stations')
     const dto: ITimetableSettingsDto = await Api.get<ITimetableSettingsDto>('/v1/smartmirror/admin/timetable/settings')
     this.setState({
       dto,
