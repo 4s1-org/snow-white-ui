@@ -1,7 +1,7 @@
 import React from 'react'
 import Api from '../../../utils/api'
 import Card from '../../common/Card'
-import { ITrafficSettingsDto, IDateSettingsDto } from '@yellowgarbagebag/snow-white-shared'
+import { ITrafficSettingsDto, IDateSettingsDto } from '@yellowgarbagegroup/snow-white-shared'
 import moment from 'moment'
 import 'moment/locale/de'
 import Select from 'react-select'
@@ -83,9 +83,7 @@ class Settings extends React.Component<IProps, IState> {
                 isDisabled={!this.state.dto.isActive}
                 options={fontSizeOptions}
                 onChange={this.onSelectFontSizeChange}
-                value={fontSizeOptions.filter(
-                  (option: { id: number }): boolean => option.id === this.state.dto.fontSize,
-                )}
+                value={fontSizeOptions.filter((option: { id: number }): boolean => option.id === this.state.dto.fontSize)}
                 getOptionLabel={(option: { id: number }): string => option.id.toString()}
                 getOptionValue={(option: { id: number }): string => option.id.toString()}
                 placeholder={'Bitte auswählen...'}

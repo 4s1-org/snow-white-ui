@@ -1,7 +1,7 @@
 import React from 'react'
 import Api from '../../../utils/api'
 import Card from '../../common/Card'
-import { IFuelPriceSettingsDto, IFuelPriceStationDto } from '@yellowgarbagebag/snow-white-shared'
+import { IFuelPriceSettingsDto, IFuelPriceStationDto } from '@yellowgarbagegroup/snow-white-shared'
 import Select from 'react-select'
 
 interface IState {
@@ -154,9 +154,7 @@ class FuelPriceSettings extends React.Component<IProps, IState> {
   }
 
   private async loadData(): Promise<void> {
-    const stations: Array<IFuelPriceStationDto> = await Api.get<Array<IFuelPriceStationDto>>(
-      '/v1/smartmirror/admin/fuelprice/stations',
-    )
+    const stations: Array<IFuelPriceStationDto> = await Api.get<Array<IFuelPriceStationDto>>('/v1/smartmirror/admin/fuelprice/stations')
     const dto: IFuelPriceSettingsDto = await Api.get<IFuelPriceSettingsDto>('/v1/smartmirror/admin/fuelprice/settings')
     this.setState({
       dto,

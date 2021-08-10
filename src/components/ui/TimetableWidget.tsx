@@ -1,5 +1,5 @@
 import React from 'react'
-import { IRmvTripsDto, IRmvTripDto } from '@yellowgarbagebag/snow-white-shared'
+import { IRmvTripsDto, IRmvTripDto } from '@yellowgarbagegroup/snow-white-shared'
 import Api from '../../utils/api'
 import moment from 'moment'
 import Widget from '../common/Widget'
@@ -58,42 +58,28 @@ class TimetableWidget extends React.Component<IProps, IState> {
                 <td className="text-center">
                   {this.formatTime(trip.startTimePlanned)}
                   <br />
-                  <div
-                    className={
-                      trip.startTimeReal > trip.startTimePlanned + this.okDelaySec ? 'text-danger' : 'text-success'
-                    }
-                  >
+                  <div className={trip.startTimeReal > trip.startTimePlanned + this.okDelaySec ? 'text-danger' : 'text-success'}>
                     {this.formatTime(trip.startTimeReal)}
                   </div>
                 </td>
                 <td className="text-center">
                   {this.formatTime(trip.arrivalTimePlanned)}
                   <br />
-                  <div
-                    className={
-                      trip.arrivalTimeReal > trip.arrivalTimePlanned + this.okDelaySec ? 'text-danger' : 'text-success'
-                    }
-                  >
+                  <div className={trip.arrivalTimeReal > trip.arrivalTimePlanned + this.okDelaySec ? 'text-danger' : 'text-success'}>
                     {this.formatTime(trip.arrivalTimeReal)}
                   </div>
                 </td>
                 <td className="text-center">
                   {this.formatTime(trip.durationPlanned)}
                   <br />
-                  <div
-                    className={
-                      trip.durationReal > trip.durationPlanned + this.okDelaySec ? 'text-danger' : 'text-success'
-                    }
-                  >
+                  <div className={trip.durationReal > trip.durationPlanned + this.okDelaySec ? 'text-danger' : 'text-success'}>
                     {this.formatTime(trip.durationReal)}
                   </div>
                 </td>
                 <td className="text-center">
                   {trip.trackPlanned}
                   <br />
-                  <div className={trip.trackPlanned !== trip.trackReal ? 'text-danger' : 'text-success'}>
-                    {trip.trackReal}
-                  </div>
+                  <div className={trip.trackPlanned !== trip.trackReal ? 'text-danger' : 'text-success'}>{trip.trackReal}</div>
                 </td>
                 <td className="text-center">{trip.lines.join(', ')}</td>
               </tr>
