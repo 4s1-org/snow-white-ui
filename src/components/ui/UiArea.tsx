@@ -4,7 +4,7 @@ import './UiArea.css'
 import DateWidget from './DateWidget'
 import FuelPriceWidget from './FuelPriceWidget'
 import TimetableWidget from './TimetableWidget'
-import { IUiSettingsDto } from '@yellowgarbagebag/snow-white-shared'
+import { IUiSettingsDto } from '@yellowgarbagegroup/snow-white-shared'
 import Api from '../../utils/api'
 import WeatherWidget from './WeatherWidget'
 
@@ -77,9 +77,7 @@ class UiArea extends React.Component<IProps, IState> {
           )}
         </div>
         <div className="float-lg-right">
-          {this.state.dto.date.isActive && (
-            <DateWidget refreshRate={1 * 1000} fontSize={this.state.dto.date.fontSize} />
-          )}
+          {this.state.dto.date.isActive && <DateWidget refreshRate={1 * 1000} fontSize={this.state.dto.date.fontSize} />}
           {this.state.dto.timetable.isActive && <TimetableWidget refreshRate={2 * 60 * 1000} />}
         </div>
       </div>
