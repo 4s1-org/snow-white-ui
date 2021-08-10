@@ -1,5 +1,5 @@
 import React from 'react'
-import { IFuelPricePricesDto } from '@yellowgarbagebag/snow-white-shared'
+import { IFuelPricePricesDto } from '@yellowgarbagegroup/snow-white-shared'
 import Api from '../../utils/api'
 import moment from 'moment'
 import Widget from '../common/Widget'
@@ -70,9 +70,7 @@ class FuelPriceWidget extends React.Component<IProps, IState> {
                 <td className="tdtext">{station.name}</td>
                 {this.props.showE5 && <td className="text-center align-middle">{this.formatPrice(station.e5)}</td>}
                 {this.props.showE10 && <td className="text-center align-middle">{this.formatPrice(station.e10)}</td>}
-                {this.props.showDiesel && (
-                  <td className="text-center align-middle">{this.formatPrice(station.diesel)}</td>
-                )}
+                {this.props.showDiesel && <td className="text-center align-middle">{this.formatPrice(station.diesel)}</td>}
               </tr>
             ))}
           </tbody>

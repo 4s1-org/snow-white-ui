@@ -1,5 +1,5 @@
 import React from 'react'
-import { ITimetableStationDto } from '@yellowgarbagebag/snow-white-shared'
+import { ITimetableStationDto } from '@yellowgarbagegroup/snow-white-shared'
 
 interface IState {
   name: string

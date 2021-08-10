@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Api from '../../../utils/api'
-import { ISortOrderDto, ITimetableStationDto } from '@yellowgarbagebag/snow-white-shared'
+import { ISortOrderDto, ITimetableStationDto } from '@yellowgarbagegroup/snow-white-shared'
 import { faCaretDown, faCaretUp, faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import Dialog from '../../common/Dialog'
 import Card from '../../common/Card'
@@ -75,18 +75,10 @@ class StationList extends React.Component<IProps, IState> {
                       >
                         <FontAwesomeIcon icon={faCaretDown} />
                       </button>
-                      <button
-                        type="button"
-                        className="btn btn-secondary"
-                        onClick={this.onBtnEditClick.bind(this, station)}
-                      >
+                      <button type="button" className="btn btn-secondary" onClick={this.onBtnEditClick.bind(this, station)}>
                         <FontAwesomeIcon icon={faEdit} />
                       </button>
-                      <button
-                        type="button"
-                        className="btn btn-danger"
-                        onClick={this.onBtnDeleteClick.bind(this, station)}
-                      >
+                      <button type="button" className="btn btn-danger" onClick={this.onBtnDeleteClick.bind(this, station)}>
                         <FontAwesomeIcon icon={faTrashAlt} />
                       </button>
                     </div>
@@ -102,12 +94,7 @@ class StationList extends React.Component<IProps, IState> {
           </Dialog>
         )}
         {this.state.showEditDialog && this.state.selectedStation && (
-          <Dialog
-            title="Bearbeiten"
-            dialogCloseCallback={this.onEditDialogClose}
-            showBtnSave={true}
-            showBtnAbort={true}
-          >
+          <Dialog title="Bearbeiten" dialogCloseCallback={this.onEditDialogClose} showBtnSave={true} showBtnAbort={true}>
             <StationEdit station={this.state.selectedStation} />
           </Dialog>
         )}
@@ -120,9 +107,7 @@ class StationList extends React.Component<IProps, IState> {
       const station: ITimetableStationDto = this.state.selectedStation
       await Api.put<void>(`/v1/smartmirror/admin/timetable/stations/${station.id}`, station)
 
-      const existingLocation: ITimetableStationDto | undefined = this.state.stations.find(
-        (x: ITimetableStationDto) => x.id === station.id,
-      )
+      const existingLocation: ITimetableStationDto | undefined = this.state.stations.find((x: ITimetableStationDto) => x.id === station.id)
       Object.assign(existingLocation, station)
 
       this.setState({
@@ -157,10 +142,7 @@ class StationList extends React.Component<IProps, IState> {
     }
   }
 
-  private onBtnDeleteClick(
-    station: ITimetableStationDto,
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): void {
+  private onBtnDeleteClick(station: ITimetableStationDto, event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
     event.preventDefault()
 
     this.setState({
@@ -219,9 +201,7 @@ class StationList extends React.Component<IProps, IState> {
   }
 
   private async loadData(): Promise<void> {
-    const res: Array<ITimetableStationDto> = await Api.get<Array<ITimetableStationDto>>(
-      '/v1/smartmirror/admin/timetable/stations',
-    )
+    const res: Array<ITimetableStationDto> = await Api.get<Array<ITimetableStationDto>>('/v1/smartmirror/admin/timetable/stations')
 
     this.setState({
       stations: res.sort((a: ITimetableStationDto, b: ITimetableStationDto) => a.sortNo - b.sortNo),
