@@ -1,7 +1,6 @@
 {
   "name": "@yellowgarbagebag/snow-white-ui",
   "version": "1.0.0",
-  "private": true,
   "description": "Snow White UI",
   "bugs": {
     "url": "https://gitlab.com/yellow-garbage-group/snow-white/issues"
@@ -11,7 +10,7 @@
     "url": "git@gitlab.com:yellow-garbage-group/snow-white.git"
   },
   "license": "MIT",
-  "author": "Steffen",
+  "author": "Steffen <YellowGarbageBag@4s1.de>",
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "preinstall": "npx only-allow pnpm",
