@@ -1,5 +1,5 @@
 import React from 'react'
-import { ICommonLocationDto } from '@yellowgarbagebag/snow-white-shared'
+import { ICommonLocationDto } from '@yellowgarbagegroup/snow-white-shared'
 
 interface IState {
   name: string

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Api from '../../../utils/api'
-import { ICommonLocationDto, ISortOrderDto } from '@yellowgarbagebag/snow-white-shared'
+import { ICommonLocationDto, ISortOrderDto } from '@yellowgarbagegroup/snow-white-shared'
 import { faCaretDown, faCaretUp, faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import Dialog from '../../common/Dialog'
 import LocationEdit from './LocationEdit'
@@ -72,18 +72,10 @@ class LocationList extends React.Component<IProps, IState> {
                       >
                         <FontAwesomeIcon icon={faCaretDown} />
                       </button>
-                      <button
-                        type="button"
-                        className="btn btn-secondary"
-                        onClick={this.onBtnEditClick.bind(this, location)}
-                      >
+                      <button type="button" className="btn btn-secondary" onClick={this.onBtnEditClick.bind(this, location)}>
                         <FontAwesomeIcon icon={faEdit} />
                       </button>
-                      <button
-                        type="button"
-                        className="btn btn-danger"
-                        onClick={this.onBtnDeleteClick.bind(this, location)}
-                      >
+                      <button type="button" className="btn btn-danger" onClick={this.onBtnDeleteClick.bind(this, location)}>
                         <FontAwesomeIcon icon={faTrashAlt} />
                       </button>
                     </div>
@@ -99,12 +91,7 @@ class LocationList extends React.Component<IProps, IState> {
           </Dialog>
         )}
         {this.state.showEditDialog && this.state.selectedLocation && (
-          <Dialog
-            title="Bearbeiten"
-            dialogCloseCallback={this.onEditDialogClose}
-            showBtnSave={true}
-            showBtnAbort={true}
-          >
+          <Dialog title="Bearbeiten" dialogCloseCallback={this.onEditDialogClose} showBtnSave={true} showBtnAbort={true}>
             <LocationEdit location={this.state.selectedLocation} />
           </Dialog>
         )}
@@ -117,9 +104,7 @@ class LocationList extends React.Component<IProps, IState> {
       const location: ICommonLocationDto = this.state.selectedLocation
       await Api.put<void>(`/v1/smartmirror/admin/common/locations/${location.id}`, location)
 
-      const existingLocation: ICommonLocationDto | undefined = this.state.locations.find(
-        (x: ICommonLocationDto) => x.id === location.id,
-      )
+      const existingLocation: ICommonLocationDto | undefined = this.state.locations.find((x: ICommonLocationDto) => x.id === location.id)
       Object.assign(existingLocation, location)
 
       this.setState({
@@ -149,10 +134,7 @@ class LocationList extends React.Component<IProps, IState> {
     }
   }
 
-  private async onBtnDeleteClick(
-    location: ICommonLocationDto,
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): Promise<void> {
+  private async onBtnDeleteClick(location: ICommonLocationDto, event: React.MouseEvent<HTMLButtonElement, MouseEvent>): Promise<void> {
     event.preventDefault()
 
     this.setState({
@@ -161,10 +143,7 @@ class LocationList extends React.Component<IProps, IState> {
     })
   }
 
-  private async onBtnEditClick(
-    location: ICommonLocationDto,
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): Promise<void> {
+  private async onBtnEditClick(location: ICommonLocationDto, event: React.MouseEvent<HTMLButtonElement, MouseEvent>): Promise<void> {
     event.preventDefault()
 
     this.setState({
@@ -173,10 +152,7 @@ class LocationList extends React.Component<IProps, IState> {
     })
   }
 
-  private async onBtnUpClick(
-    location: ICommonLocationDto,
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): Promise<void> {
+  private async onBtnUpClick(location: ICommonLocationDto, event: React.MouseEvent<HTMLButtonElement, MouseEvent>): Promise<void> {
     event.preventDefault()
 
     const idx: number = this.state.locations.indexOf(location)
@@ -185,10 +161,7 @@ class LocationList extends React.Component<IProps, IState> {
     }
   }
 
-  private async onBtnDownClick(
-    location: ICommonLocationDto,
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): Promise<void> {
+  private async onBtnDownClick(location: ICommonLocationDto, event: React.MouseEvent<HTMLButtonElement, MouseEvent>): Promise<void> {
     event.preventDefault()
 
     const idx: number = this.state.locations.indexOf(location)

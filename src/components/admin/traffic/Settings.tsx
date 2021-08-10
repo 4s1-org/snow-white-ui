@@ -1,7 +1,7 @@
 import React from 'react'
 import Api from '../../../utils/api'
 import Card from '../../common/Card'
-import { ITrafficSettingsDto, ICommonLocationDto } from '@yellowgarbagebag/snow-white-shared'
+import { ITrafficSettingsDto, ICommonLocationDto } from '@yellowgarbagegroup/snow-white-shared'
 import Select from 'react-select'
 
 interface IState {
@@ -34,9 +34,7 @@ class Settings extends React.Component<IProps, IState> {
 
   public async componentDidMount(): Promise<void> {
     const dto: ITrafficSettingsDto = await Api.get<ITrafficSettingsDto>('/v1/smartmirror/admin/traffic/settings')
-    const locations: Array<ICommonLocationDto> = await Api.get<Array<ICommonLocationDto>>(
-      '/v1/smartmirror/admin/common/locations',
-    )
+    const locations: Array<ICommonLocationDto> = await Api.get<Array<ICommonLocationDto>>('/v1/smartmirror/admin/common/locations')
 
     this.setState({
       dto,
@@ -101,9 +99,7 @@ class Settings extends React.Component<IProps, IState> {
                 isDisabled={!this.state.dto.isActive}
                 options={this.state.locations}
                 onChange={this.onSelectLocationToChange}
-                value={this.state.locations.filter(
-                  (location: ICommonLocationDto): boolean => location.id === this.state.dto.locationToId,
-                )}
+                value={this.state.locations.filter((location: ICommonLocationDto): boolean => location.id === this.state.dto.locationToId)}
                 getOptionLabel={(option: ICommonLocationDto): string => option.name}
                 getOptionValue={(option: ICommonLocationDto): string => option.id}
                 placeholder={'Bitte auswählen...'}

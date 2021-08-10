@@ -1,6 +1,6 @@
 import React from 'react'
 import Api from '../../../utils/api'
-import { ICommonSettingsDto } from '@yellowgarbagebag/snow-white-shared'
+import { ICommonSettingsDto } from '@yellowgarbagegroup/snow-white-shared'
 import Card from '../../common/Card'
 
 interface IState {
@@ -45,23 +45,13 @@ class CommonSettings extends React.Component<IProps, IState> {
                   <label className="col-form-label">von</label>
                 </div>
                 <div className="col">
-                  <input
-                    className="form-control"
-                    type="time"
-                    value={this.state.morningStart}
-                    onChange={this.onMorningStartChange}
-                  />
+                  <input className="form-control" type="time" value={this.state.morningStart} onChange={this.onMorningStartChange} />
                 </div>
                 <div className="col">
                   <label className="col-form-label">bis</label>
                 </div>
                 <div className="col">
-                  <input
-                    className="form-control"
-                    type="time"
-                    value={this.state.morningEnd}
-                    onChange={this.onMorningEndChange}
-                  />
+                  <input className="form-control" type="time" value={this.state.morningEnd} onChange={this.onMorningEndChange} />
                 </div>
               </div>
             </div>
@@ -74,25 +64,13 @@ class CommonSettings extends React.Component<IProps, IState> {
                   <label className="col-form-label">von</label>
                 </div>
                 <div className="col">
-                  <input
-                    type="text"
-                    className="form-control"
-                    value={this.state.morningEnd}
-                    readOnly
-                    style={{ width: 100 }}
-                  />
+                  <input type="text" className="form-control" value={this.state.morningEnd} readOnly style={{ width: 100 }} />
                 </div>
                 <div className="col">
                   <label className="col-form-label">bis</label>
                 </div>
                 <div className="col">
-                  <input
-                    type="text"
-                    className="form-control"
-                    value={this.state.morningStart}
-                    readOnly
-                    style={{ width: 100 }}
-                  />
+                  <input type="text" className="form-control" value={this.state.morningStart} readOnly style={{ width: 100 }} />
                 </div>
               </div>
             </div>

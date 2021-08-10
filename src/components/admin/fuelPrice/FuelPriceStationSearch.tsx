@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faPlus } from '@fortawesome/free-solid-svg-icons'
 import Api from '../../../utils/api'
-import { ITankerkoenigStationDto, ICommonLocationDto, ICoordinatesDto } from '@yellowgarbagebag/snow-white-shared'
+import { ITankerkoenigStationDto, ICommonLocationDto, ICoordinatesDto } from '@yellowgarbagegroup/snow-white-shared'
 import Card from '../../common/Card'
 import Select from 'react-select'
 
@@ -29,9 +29,7 @@ class GasStationSearch extends React.Component<IProps, IState> {
   }
 
   public async componentDidMount(): Promise<void> {
-    const locations: Array<ICommonLocationDto> = await Api.get<Array<ICommonLocationDto>>(
-      '/v1/smartmirror/admin/common/locations',
-    )
+    const locations: Array<ICommonLocationDto> = await Api.get<Array<ICommonLocationDto>>('/v1/smartmirror/admin/common/locations')
 
     this.setState({
       locations: locations.sort((a: ICommonLocationDto, b: ICommonLocationDto): number => a.sortNo - b.sortNo),
@@ -109,10 +107,7 @@ class GasStationSearch extends React.Component<IProps, IState> {
     await this.doSearch()
   }
 
-  private async onBtnAddClick(
-    location: ITankerkoenigStationDto,
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): Promise<void> {
+  private async onBtnAddClick(location: ITankerkoenigStationDto, e: React.MouseEvent<HTMLButtonElement, MouseEvent>): Promise<void> {
     e.preventDefault()
     await this.doAdd(location)
   }
