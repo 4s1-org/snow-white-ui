@@ -7,7 +7,7 @@ specifiers:
   '@testing-library/react': 11.2.7
   '@testing-library/user-event': 13.2.1
   '@types/node': 14.17.9
-  '@types/react': 17.0.16
+  '@types/react': 17.0.17
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
   '@types/react-select': 4.0.17
@@ -42,13 +42,13 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-router-dom: 5.2.0_react@17.0.2
   react-scripts: 4.0.3_react@17.0.2+typescript@4.3.5
-  react-select: 4.3.1_a1bbe17b69ce74ad68a61ee76e049e19
+  react-select: 4.3.1_9c423dff26c1034f6157071c372957fe
   typescript: 4.3.5
   web-vitals: 1.1.2
 
 devDependencies:
   '@types/node': 14.17.9
-  '@types/react': 17.0.16
+  '@types/react': 17.0.17
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
   '@types/react-select': 4.0.17
@@ -1574,7 +1574,7 @@ packages:
   /@emotion/memoize/0.7.5:
     resolution: {integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==}
 
-  /@emotion/react/11.4.1_15528815d0fdcbb9a8cf5c0542e8230f:
+  /@emotion/react/11.4.1_9280ae23271fd1e8184f767af1a90e55:
     resolution: {integrity: sha512-pRegcsuGYj4FCdZN6j5vqCALkNytdrKw3TZMekTzNXixRg4wkLsU5QEaBG5LC6l01Vppxlp7FE3aTHpIG5phLg==}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -1592,7 +1592,7 @@ packages:
       '@emotion/sheet': 1.0.2
       '@emotion/utils': 1.0.0
       '@emotion/weak-memoize': 0.2.5
-      '@types/react': 17.0.16
+      '@types/react': 17.0.17
       hoist-non-react-statics: 3.3.2
       react: 17.0.2
     dev: false
@@ -2338,6 +2338,14 @@ packages:
 
   /@types/react/17.0.16:
     resolution: {integrity: sha512-3kCUiOOlQTwUUvjNFkbBTWMTxdTGybz/PfjCw9JmaRGcEDBQh+nGMg7/E9P2rklhJuYVd25IYLNcvqgSPCPksg==}
+    dependencies:
+      '@types/prop-types': 15.7.4
+      '@types/scheduler': 0.16.2
+      csstype: 3.0.8
+    dev: true
+
+  /@types/react/17.0.17:
+    resolution: {integrity: sha512-nrfi7I13cAmrd0wje8czYpf5SFbryczCtPzFc6ijqvdjKcyA3tCvGxwchOUlxb2ucBPuJ9Y3oUqKrRqZvrz0lw==}
     dependencies:
       '@types/prop-types': 15.7.4
       '@types/scheduler': 0.16.2
@@ -9573,7 +9581,7 @@ packages:
       - webpack-plugin-serve
     dev: false
 
-  /react-select/4.3.1_a1bbe17b69ce74ad68a61ee76e049e19:
+  /react-select/4.3.1_9c423dff26c1034f6157071c372957fe:
     resolution: {integrity: sha512-HBBd0dYwkF5aZk1zP81Wx5UsLIIT2lSvAY2JiJo199LjoLHoivjn9//KsmvQMEFGNhe58xyuOITjfxKCcGc62Q==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -9581,7 +9589,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.14.8
       '@emotion/cache': 11.4.0
-      '@emotion/react': 11.4.1_15528815d0fdcbb9a8cf5c0542e8230f
+      '@emotion/react': 11.4.1_9280ae23271fd1e8184f767af1a90e55
       memoize-one: 5.2.1
       prop-types: 15.7.2
       react: 17.0.2
