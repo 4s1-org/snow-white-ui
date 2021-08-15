@@ -3,7 +3,7 @@ stages:
 
 validate:
   stage: validating
-  image: node:14-alpine
+  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node-with-pnpm:14-alpine
   #artifacts:
   #  when: always
   #  paths:
