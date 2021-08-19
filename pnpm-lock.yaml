@@ -12,7 +12,7 @@ specifiers:
   '@types/react-router-dom': 5.1.8
   '@types/react-select': 4.0.17
   '@yellowgarbagegroup/eslint-config': 2.0.1
-  '@yellowgarbagegroup/snow-white-shared': 3.0.0
+  '@yellowgarbagegroup/snow-white-shared': 3.1.0
   axios: 0.21.1
   bootstrap: 4.6.0
   eslint: 7.32.0
@@ -33,7 +33,7 @@ dependencies:
   '@fortawesome/react-fontawesome': 0.1.15_f515edce028694561ceb456e3dba224c
   '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 13.2.1
-  '@yellowgarbagegroup/snow-white-shared': 3.0.0
+  '@yellowgarbagegroup/snow-white-shared': 3.1.0
   axios: 0.21.1
   bootstrap: 4.6.0
   moment: 2.29.1
@@ -2715,8 +2715,8 @@ packages:
       - typescript
     dev: true
 
-  /@yellowgarbagegroup/snow-white-shared/3.0.0:
-    resolution: {integrity: sha1-lo3YCoEwoFBYSOhEXT8g1sv/FMU=, tarball: https://gitlab.com/api/v4/projects/28742456/packages/npm/@yellowgarbagegroup/snow-white-shared/-/@yellowgarbagegroup/snow-white-shared-3.0.0.tgz}
+  /@yellowgarbagegroup/snow-white-shared/3.1.0:
+    resolution: {integrity: sha1-DllGJMeR1/SaYmWc5Tw097P6Jsg=, tarball: https://gitlab.com/api/v4/projects/28742456/packages/npm/@yellowgarbagegroup/snow-white-shared/-/@yellowgarbagegroup/snow-white-shared-3.1.0.tgz}
     requiresBuild: true
     dev: false
 
