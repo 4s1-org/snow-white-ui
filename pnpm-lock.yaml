@@ -6,7 +6,7 @@ specifiers:
   '@fortawesome/react-fontawesome': 0.1.15
   '@testing-library/react': 11.2.7
   '@testing-library/user-event': 13.2.1
-  '@types/node': 14.17.9
+  '@types/node': 14.17.10
   '@types/react': 17.0.18
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
@@ -47,7 +47,7 @@ dependencies:
   web-vitals: 1.1.2
 
 devDependencies:
-  '@types/node': 14.17.9
+  '@types/node': 14.17.10
   '@types/react': 17.0.18
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
@@ -2277,8 +2277,13 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: false
 
+  /@types/node/14.17.10:
+    resolution: {integrity: sha512-09x2d6kNBwjHgyh3jOUE2GE4DFoxDriDvWdu6mFhMP1ysynGYazt4ecZmJlL6/fe4Zi2vtYvTvtL7epjQQrBhA==}
+    dev: true
+
   /@types/node/14.17.9:
     resolution: {integrity: sha512-CMjgRNsks27IDwI785YMY0KLt3co/c0cQ5foxHYv/shC2w8oOnVwz5Ubq1QG5KzrcW+AXk6gzdnxIkDnTvzu3g==}
+    dev: false
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
