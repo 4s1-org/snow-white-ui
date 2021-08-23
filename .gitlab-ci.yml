@@ -3,12 +3,11 @@ stages:
 
 validate:
   stage: validating
-  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node-with-pnpm:14-alpine
-  #artifacts:
-  #  when: always
-  #  paths:
-  #    - coverage/
-  #  expire_in: 1 week
+  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node:14-alpine
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    paths:
+      - .pnpm-store
   script:
     - npm i pnpm -g
     - pnpm i
