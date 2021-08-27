@@ -11,7 +11,7 @@ specifiers:
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
   '@types/react-select': 4.0.17
-  '@yellowgarbagegroup/eslint-config': 2.0.1
+  '@yellowgarbagegroup/eslint-config': 2.1.1
   '@yellowgarbagegroup/snow-white-shared': 3.1.1
   axios: 0.21.1
   bootstrap: 4.6.0
@@ -52,7 +52,7 @@ devDependencies:
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
   '@types/react-select': 4.0.17
-  '@yellowgarbagegroup/eslint-config': 2.0.1_aff669e8eb0d21fc4e2068e6112ef4d0
+  '@yellowgarbagegroup/eslint-config': 2.1.1_aff669e8eb0d21fc4e2068e6112ef4d0
   eslint: 7.32.0
   prettier: 2.3.2
 
@@ -2698,8 +2698,8 @@ packages:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
     dev: false
 
-  /@yellowgarbagegroup/eslint-config/2.0.1_aff669e8eb0d21fc4e2068e6112ef4d0:
-    resolution: {integrity: sha1-TaSxTO+4PZbtxKW1wxH3J/cCbUk=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@yellowgarbagegroup/eslint-config/-/@yellowgarbagegroup/eslint-config-2.0.1.tgz}
+  /@yellowgarbagegroup/eslint-config/2.1.1_aff669e8eb0d21fc4e2068e6112ef4d0:
+    resolution: {integrity: sha1-5sKfmxJuHlzkkxxOjMwJKHDxKh8=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@yellowgarbagegroup/eslint-config/-/@yellowgarbagegroup/eslint-config-2.1.1.tgz}
     peerDependencies:
       eslint: '>=7.30.0'
       prettier: '>= 2.3.0'
