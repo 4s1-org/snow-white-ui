@@ -47,7 +47,7 @@
     "@fortawesome/react-fontawesome": "0.1.15",
     "@testing-library/react": "11.2.7",
     "@testing-library/user-event": "13.2.1",
-    "@yellowgarbagegroup/snow-white-shared": "3.1.0",
+    "@yellowgarbagegroup/snow-white-shared": "3.1.1",
     "axios": "0.21.1",
     "bootstrap": "4.6.0",
     "moment": "2.29.1",
