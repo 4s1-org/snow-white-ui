@@ -1,16 +1,18 @@
 stages:
-  - validating
+  - validate
+  - deploy
 
-validate:
-  stage: validating
-  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node:14-alpine
+validate-job:
+  stage: validate
+  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node:14-alpine-dev
   cache:
     key: "$CI_COMMIT_REF_SLUG"
     paths:
       - .pnpm-store
+  before_script:
+    - pnpm config set store-dir .pnpm-store
   script:
-    - npm i pnpm -g
     - pnpm i
     - pnpm run lint
     - pnpm run build
-    #- npm run test:cov
+    #- pnpm run test
