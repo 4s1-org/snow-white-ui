@@ -8,7 +8,7 @@ specifiers:
   '@fortawesome/react-fontawesome': 0.1.15
   '@testing-library/react': 11.2.7
   '@testing-library/user-event': 13.2.1
-  '@types/node': 14.17.14
+  '@types/node': 14.17.15
   '@types/react': 17.0.20
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
@@ -48,7 +48,7 @@ dependencies:
 
 devDependencies:
   '@4s1/eslint-config': 3.0.0_00f214669faf97932d4fbf8bb2889514
-  '@types/node': 14.17.14
+  '@types/node': 14.17.15
   '@types/react': 17.0.20
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
@@ -2303,8 +2303,8 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: false
 
-  /@types/node/14.17.14:
-    resolution: {integrity: sha512-rsAj2u8Xkqfc332iXV12SqIsjVi07H479bOP4q94NAcjzmAvapumEhuVIt53koEf7JFrpjgNKjBga5Pnn/GL8A==}
+  /@types/node/14.17.15:
+    resolution: {integrity: sha512-D1sdW0EcSCmNdLKBGMYb38YsHUS6JcM7yQ6sLQ9KuZ35ck7LYCKE7kYFHOO59ayFOY3zobWVZxf4KXhYHcHYFA==}
     dev: true
 
   /@types/node/14.17.9:
