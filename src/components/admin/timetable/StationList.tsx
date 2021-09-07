@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Api from '../../../utils/api'
-import { ISortOrderDto, ITimetableStationDto } from '@yellowgarbagegroup/snow-white-shared'
+import { ISortOrderDto, ITimetableStationDto } from '@4s1/snow-white-shared'
 import { faCaretDown, faCaretUp, faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import Dialog from '../../common/Dialog'
 import Card from '../../common/Card'

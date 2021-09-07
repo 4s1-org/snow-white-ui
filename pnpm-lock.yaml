@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@4s1/eslint-config': 3.0.0
+  '@4s1/snow-white-shared': 4.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.15
@@ -11,8 +13,6 @@ specifiers:
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
   '@types/react-select': 4.0.17
-  '@yellowgarbagegroup/eslint-config': 2.2.0
-  '@yellowgarbagegroup/snow-white-shared': 3.1.2
   axios: 0.21.4
   bootstrap: 4.6.0
   eslint: 7.32.0
@@ -28,12 +28,12 @@ specifiers:
   web-vitals: 1.1.2
 
 dependencies:
+  '@4s1/snow-white-shared': 4.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.15_f515edce028694561ceb456e3dba224c
   '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 13.2.1
-  '@yellowgarbagegroup/snow-white-shared': 3.1.2
   axios: 0.21.4
   bootstrap: 4.6.0
   moment: 2.29.1
@@ -47,16 +47,38 @@ dependencies:
   web-vitals: 1.1.2
 
 devDependencies:
+  '@4s1/eslint-config': 3.0.0_00f214669faf97932d4fbf8bb2889514
   '@types/node': 14.17.14
   '@types/react': 17.0.20
   '@types/react-dom': 17.0.9
   '@types/react-router-dom': 5.1.8
   '@types/react-select': 4.0.17
-  '@yellowgarbagegroup/eslint-config': 2.2.0_00f214669faf97932d4fbf8bb2889514
   eslint: 7.32.0
   prettier: 2.3.2
 
 packages:
+
+  /@4s1/eslint-config/3.0.0_00f214669faf97932d4fbf8bb2889514:
+    resolution: {integrity: sha1-+Mtffuh+Cg652gQa/pqA02/I6Fo=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@4s1/eslint-config/-/@4s1/eslint-config-3.0.0.tgz}
+    peerDependencies:
+      eslint: '>=7.30.0'
+      prettier: '>= 2.3.0'
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 4.30.0_8a8a2d3eaa9257455a03c16dce5f55b3
+      '@typescript-eslint/parser': 4.30.0_eslint@7.32.0+typescript@4.4.2
+      eslint: 7.32.0
+      eslint-config-prettier: 8.3.0_eslint@7.32.0
+      eslint-plugin-import: 2.24.2_eslint@7.32.0
+      prettier: 2.3.2
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
+  /@4s1/snow-white-shared/4.0.0:
+    resolution: {integrity: sha1-JNO7UzxsLmP97HxcWU/BJmhOWmM=, tarball: https://gitlab.com/api/v4/projects/28742456/packages/npm/@4s1/snow-white-shared/-/@4s1/snow-white-shared-4.0.0.tgz}
+    requiresBuild: true
+    dev: false
 
   /@babel/code-frame/7.10.4:
     resolution: {integrity: sha512-vG6SvB6oYEhvgisZNFRmRCUkLz11c7rp+tbNTynGqc6mS1d5ATd/sGyV6W0KZZnXRKMTzZDRgQT3Ou9jhpAfUg==}
@@ -1933,7 +1955,7 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.11.1
+      fastq: 1.12.0
 
   /@npmcli/move-file/1.1.2:
     resolution: {integrity: sha512-1SUf/Cg2GzGDyaf15aR9St9TWlb+XvbZXWpDx8YKs7MLzMH/BCeopv+y9vzrzgkfykCGuWOlSu3mZhj2+FQcrg==}
@@ -2812,28 +2834,6 @@ packages:
 
   /@xtuc/long/4.2.2:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
-    dev: false
-
-  /@yellowgarbagegroup/eslint-config/2.2.0_00f214669faf97932d4fbf8bb2889514:
-    resolution: {integrity: sha1-F6qs3S00H9yQmqVgnG/5veC12WQ=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@yellowgarbagegroup/eslint-config/-/@yellowgarbagegroup/eslint-config-2.2.0.tgz}
-    peerDependencies:
-      eslint: '>=7.30.0'
-      prettier: '>= 2.3.0'
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 4.30.0_8a8a2d3eaa9257455a03c16dce5f55b3
-      '@typescript-eslint/parser': 4.30.0_eslint@7.32.0+typescript@4.4.2
-      eslint: 7.32.0
-      eslint-config-prettier: 8.3.0_eslint@7.32.0
-      eslint-plugin-import: 2.24.2_eslint@7.32.0
-      prettier: 2.3.2
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: true
-
-  /@yellowgarbagegroup/snow-white-shared/3.1.2:
-    resolution: {integrity: sha1-67V5UrOGwEQ0B/eJKEqyrpyQMV0=, tarball: https://gitlab.com/api/v4/projects/28742456/packages/npm/@yellowgarbagegroup/snow-white-shared/-/@yellowgarbagegroup/snow-white-shared-3.1.2.tgz}
-    requiresBuild: true
     dev: false
 
   /abab/2.0.5:
@@ -5557,8 +5557,8 @@ packages:
   /fast-levenshtein/2.0.6:
     resolution: {integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=}
 
-  /fastq/1.11.1:
-    resolution: {integrity: sha512-HOnr8Mc60eNYl1gzwp6r5RoUyAn5/glBolUzP/Ez6IFVPMPirxn/9phgL6zhOtaTy7ISwPvQ+wT+hfcRZh/bzw==}
+  /fastq/1.12.0:
+    resolution: {integrity: sha512-VNX0QkHK3RsXVKr9KrlUv/FoTa0NdbYoHHl7uXHv2rzyHSlxjdNAKug2twd9luJxpcyNeAgf5iPPMutJO67Dfg==}
     dependencies:
       reusify: 1.0.4
 
@@ -6460,8 +6460,10 @@ packages:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
     dev: false
 
-  /is-bigint/1.0.3:
-    resolution: {integrity: sha512-ZU538ajmYJmzysE5yU4Y7uIrPQ2j704u+hXFiIPQExpqzzUbpe5jCPdTfmz7jXRxZdvjY3KZ3ZNenoXQovX+Dg==}
+  /is-bigint/1.0.4:
+    resolution: {integrity: sha512-zB9CruMamjym81i2JZ3UMn54PKGsQzsJeo6xvN3HJJ4CAsQNB6iRutp2To77OfCNuoxspsIhzaPoO1zyCEhFOg==}
+    dependencies:
+      has-bigints: 1.0.1
 
   /is-binary-path/1.0.1:
     resolution: {integrity: sha1-dfFmQrSA8YenEcgUFh/TpKdlWJg=}
@@ -11699,7 +11701,7 @@ packages:
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
     dependencies:
-      is-bigint: 1.0.3
+      is-bigint: 1.0.4
       is-boolean-object: 1.1.2
       is-number-object: 1.0.6
       is-string: 1.0.7

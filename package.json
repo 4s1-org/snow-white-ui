@@ -1,17 +1,17 @@
 {
-  "name": "@yellowgarbagegroup/snow-white-ui",
+  "name": "@4s1/snow-white-ui",
   "version": "1.0.0",
   "description": "Snow White - UI",
   "bugs": {
-    "url": "https://gitlab.com/YellowGarbageGroup/snow-white/snow-white-ui/issues"
+    "url": "https://gitlab.com/4s1/snow-white/snow-white-ui/issues"
   },
-  "homepage": "https://gitlab.com/YellowGarbageGroup/snow-white/snow-white-ui",
+  "homepage": "https://gitlab.com/4s1/snow-white/snow-white-ui",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:YellowGarbageGroup/snow-white/snow-white-ui.git"
+    "url": "git+ssh://git@gitlab.com/4s1/snow-white/snow-white-ui.git"
   },
   "license": "MIT",
-  "author": "Steffen <YellowGarbageBag@4s1.de>",
+  "author": "Steffen <steffen@4s1.de>",
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "preinstall": "npx only-allow pnpm",
@@ -35,19 +35,19 @@
       "last 1 safari version"
     ]
   },
-  "prettier": "@yellowgarbagegroup/eslint-config",
+  "prettier": "@4s1/eslint-config",
   "eslintConfig": {
     "extends": [
       "react-app"
     ]
   },
   "dependencies": {
+    "@4s1/snow-white-shared": "4.0.0",
     "@fortawesome/fontawesome-svg-core": "1.2.36",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@fortawesome/react-fontawesome": "0.1.15",
     "@testing-library/react": "11.2.7",
     "@testing-library/user-event": "13.2.1",
-    "@yellowgarbagegroup/snow-white-shared": "3.1.2",
     "axios": "0.21.4",
     "bootstrap": "4.6.0",
     "moment": "2.29.1",
@@ -61,12 +61,12 @@
     "web-vitals": "1.1.2"
   },
   "devDependencies": {
+    "@4s1/eslint-config": "3.0.0",
     "@types/node": "14.17.14",
     "@types/react": "17.0.20",
     "@types/react-dom": "17.0.9",
     "@types/react-router-dom": "5.1.8",
     "@types/react-select": "4.0.17",
-    "@yellowgarbagegroup/eslint-config": "2.2.0",
     "eslint": "7.32.0",
     "prettier": "2.3.2"
   },

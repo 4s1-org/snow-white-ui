@@ -1,7 +1,7 @@
 import React from 'react'
 import Api from '../../../utils/api'
 import Card from '../../common/Card'
-import { IWeatherSettingsDto, ICommonLocationDto } from '@yellowgarbagegroup/snow-white-shared'
+import { IWeatherSettingsDto, ICommonLocationDto } from '@4s1/snow-white-shared'
 import Select from 'react-select'
 
 interface IState {

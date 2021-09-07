@@ -1,7 +1,7 @@
 import React from 'react'
 import Api from '../../../utils/api'
 import Card from '../../common/Card'
-import { IFuelPriceSettingsDto, IFuelPriceStationDto } from '@yellowgarbagegroup/snow-white-shared'
+import { IFuelPriceSettingsDto, IFuelPriceStationDto } from '@4s1/snow-white-shared'
 import Select from 'react-select'
 
 interface IState {

@@ -4,7 +4,7 @@ import './UiArea.css'
 import DateWidget from './DateWidget'
 import FuelPriceWidget from './FuelPriceWidget'
 import TimetableWidget from './TimetableWidget'
-import { IUiSettingsDto } from '@yellowgarbagegroup/snow-white-shared'
+import { IUiSettingsDto } from '@4s1/snow-white-shared'
 import Api from '../../utils/api'
 import WeatherWidget from './WeatherWidget'
 
