@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@4s1/eslint-config': 3.1.0
+  '@4s1/eslint-config': 3.1.1
   '@4s1/snow-white-shared': 4.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
@@ -47,7 +47,7 @@ dependencies:
   web-vitals: 1.1.2
 
 devDependencies:
-  '@4s1/eslint-config': 3.1.0_4fa6e7bd7b74e131ac98c8b75e0eea1c
+  '@4s1/eslint-config': 3.1.1_4fa6e7bd7b74e131ac98c8b75e0eea1c
   '@types/node': 14.17.15
   '@types/react': 17.0.20
   '@types/react-dom': 17.0.9
@@ -58,8 +58,8 @@ devDependencies:
 
 packages:
 
-  /@4s1/eslint-config/3.1.0_4fa6e7bd7b74e131ac98c8b75e0eea1c:
-    resolution: {integrity: sha1-OR5wtulm6aSTamf04xSnExVo9qY=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@4s1/eslint-config/-/@4s1/eslint-config-3.1.0.tgz}
+  /@4s1/eslint-config/3.1.1_4fa6e7bd7b74e131ac98c8b75e0eea1c:
+    resolution: {integrity: sha1-hrPfT6pGZ/FF5M4l2VuhmWYa19g=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@4s1/eslint-config/-/@4s1/eslint-config-3.1.1.tgz}
     peerDependencies:
       eslint: '>=7.30.0'
       prettier: '>= 2.4.0'
