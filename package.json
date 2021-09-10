@@ -5,7 +5,10 @@
   "bugs": {
     "url": "https://gitlab.com/4s1/snow-white/snow-white-ui/issues"
   },
-  "repository": "gitlab:4s1/snow-white/snow-white-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/4s1/snow-white/snow-white-ui.git"
+  },
   "license": "MIT",
   "author": "Steffen <steffen@4s1.de>",
   "scripts": {
