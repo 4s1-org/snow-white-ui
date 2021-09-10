@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@4s1/eslint-config': 3.1.1
-  '@4s1/snow-white-shared': 4.0.0
+  '@4s1/snow-white-shared': 4.0.1
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.15
@@ -28,7 +28,7 @@ specifiers:
   web-vitals: 1.1.2
 
 dependencies:
-  '@4s1/snow-white-shared': 4.0.0
+  '@4s1/snow-white-shared': 4.0.1
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.15_f515edce028694561ceb456e3dba224c
@@ -75,8 +75,8 @@ packages:
       - typescript
     dev: true
 
-  /@4s1/snow-white-shared/4.0.0:
-    resolution: {integrity: sha1-JNO7UzxsLmP97HxcWU/BJmhOWmM=, tarball: https://gitlab.com/api/v4/projects/28742456/packages/npm/@4s1/snow-white-shared/-/@4s1/snow-white-shared-4.0.0.tgz}
+  /@4s1/snow-white-shared/4.0.1:
+    resolution: {integrity: sha1-lCQ1BIbY2xr014feQf5553lPJbg=, tarball: https://gitlab.com/api/v4/projects/28742456/packages/npm/@4s1/snow-white-shared/-/@4s1/snow-white-shared-4.0.1.tgz}
     requiresBuild: true
     dev: false
 
