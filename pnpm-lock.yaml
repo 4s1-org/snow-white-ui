@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@4s1/eslint-config': 3.1.2
   '@4s1/snow-white-shared': 4.1.0
+  '@4s1/ts-config': 1.2.2
   '@commitlint/cli': 13.2.0
   '@commitlint/config-conventional': 13.2.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
@@ -51,6 +52,7 @@ dependencies:
 
 devDependencies:
   '@4s1/eslint-config': 3.1.2_13388322ed5f5557f11897bd277b61cc
+  '@4s1/ts-config': 1.2.2
   '@commitlint/cli': 13.2.0_typescript@4.4.3
   '@commitlint/config-conventional': 13.2.0
   '@types/node': 14.17.21
@@ -87,6 +89,11 @@ packages:
     resolution: {integrity: sha1-Q9kNM9/zWstfYI4HK6RsldhcbHk=, tarball: https://gitlab.com/api/v4/projects/28742456/packages/npm/@4s1/snow-white-shared/-/@4s1/snow-white-shared-4.1.0.tgz}
     requiresBuild: true
     dev: false
+
+  /@4s1/ts-config/1.2.2:
+    resolution: {integrity: sha1-Qw0w5HeorK6sSirwZJS1uj88wYc=, tarball: https://gitlab.com/api/v4/projects/30088896/packages/npm/@4s1/ts-config/-/@4s1/ts-config-1.2.2.tgz}
+    requiresBuild: true
+    dev: true
 
   /@babel/code-frame/7.10.4:
     resolution: {integrity: sha512-vG6SvB6oYEhvgisZNFRmRCUkLz11c7rp+tbNTynGqc6mS1d5ATd/sGyV6W0KZZnXRKMTzZDRgQT3Ou9jhpAfUg==}
