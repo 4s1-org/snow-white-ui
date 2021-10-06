@@ -11,6 +11,7 @@
     "url": "https://gitlab.com/4s1/snow-white/snow-white-ui.git"
   },
   "license": "MIT",
+  "type": "module",
   "author": "Steffen <steffen@4s1.de>",
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
@@ -60,7 +61,6 @@
     "web-vitals": "1.1.2"
   },
   "devDependencies": {
-    "@4s1/changelog-config": "3.0.0",
     "@4s1/eslint-config": "3.1.2",
     "@commitlint/cli": "13.2.0",
     "@commitlint/config-conventional": "13.2.0",
