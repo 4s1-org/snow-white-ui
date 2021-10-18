@@ -10,7 +10,7 @@ specifiers:
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.16
   '@testing-library/react': 12.1.2
-  '@testing-library/user-event': 13.4.2
+  '@testing-library/user-event': 13.5.0
   '@types/node': 14.17.27
   '@types/react': 17.0.30
   '@types/react-dom': 17.0.9
@@ -38,7 +38,7 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.16_f515edce028694561ceb456e3dba224c
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
-  '@testing-library/user-event': 13.4.2
+  '@testing-library/user-event': 13.5.0
   axios: 0.23.0
   bootstrap: 4.6.0
   moment: 2.29.1
@@ -2410,8 +2410,8 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@testing-library/user-event/13.4.2:
-    resolution: {integrity: sha512-IMrlaJVr2TjHggpyBmIsXBgbnphr+G6tESrWzWc6Sy2EsVy4wLskKGMKgZAozlWQa6p5FiqgSr0RpqISsTlNqQ==}
+  /@testing-library/user-event/13.5.0:
+    resolution: {integrity: sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
