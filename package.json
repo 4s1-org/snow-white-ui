@@ -66,7 +66,7 @@
     "@commitlint/cli": "13.2.1",
     "@commitlint/config-conventional": "13.2.0",
     "@types/node": "14.17.32",
-    "@types/react": "17.0.32",
+    "@types/react": "17.0.33",
     "@types/react-dom": "17.0.10",
     "@types/react-router-dom": "5.3.2",
     "@types/react-select": "4.0.18",
