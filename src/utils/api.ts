@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
+import { ProcessEnv } from '../process-env'
 
 class Api {
   public static get<T>(path: string): Promise<T> {
@@ -19,7 +20,7 @@ class Api {
 
   private static async request<T>(path: string, method: 'GET' | 'PUT' | 'POST' | 'DELETE', data?: any): Promise<T> {
     const config: AxiosRequestConfig = {
-      baseURL: process.env.REACT_APP_BACKEND_URL,
+      baseURL: ProcessEnv.BACKEND_URL,
       data,
       headers: {
         'Content-Type': 'application/json',
