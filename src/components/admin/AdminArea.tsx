@@ -30,9 +30,7 @@ class AdminArea extends React.Component<IProps, IState> {
   public render(): JSX.Element {
     const collapsed: boolean = this.state.collapsed
     const classOne: string = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show'
-    const classTwo: string = collapsed
-      ? 'navbar-toggler navbar-toggler-right collapsed'
-      : 'navbar-toggler navbar-toggler-right'
+    const classTwo: string = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right'
 
     return (
       <div className="adminarea">
@@ -47,7 +45,7 @@ class AdminArea extends React.Component<IProps, IState> {
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <img width="40" height="40" alt="Smart Mirror" />
+            {/* <img width="40" height="40" alt="Smart Mirror" src="" /> */}
             <div className={`${classOne}`} id="navbarResponsive">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
@@ -61,42 +59,22 @@ class AdminArea extends React.Component<IProps, IState> {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink
-                    to="/admin/fuelPrice"
-                    className="nav-link"
-                    activeClassName="active"
-                    onClick={this.toggleNavbar}
-                  >
+                  <NavLink to="/admin/fuelPrice" className="nav-link" activeClassName="active" onClick={this.toggleNavbar}>
                     Kraftstoffpreise
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink
-                    to="/admin/timetable"
-                    className="nav-link"
-                    activeClassName="active"
-                    onClick={this.toggleNavbar}
-                  >
+                  <NavLink to="/admin/timetable" className="nav-link" activeClassName="active" onClick={this.toggleNavbar}>
                     Fahrplan
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink
-                    to="/admin/traffic"
-                    className="nav-link"
-                    activeClassName="active"
-                    onClick={this.toggleNavbar}
-                  >
+                  <NavLink to="/admin/traffic" className="nav-link" activeClassName="active" onClick={this.toggleNavbar}>
                     Verkehr
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink
-                    to="/admin/weather"
-                    className="nav-link"
-                    activeClassName="active"
-                    onClick={this.toggleNavbar}
-                  >
+                  <NavLink to="/admin/weather" className="nav-link" activeClassName="active" onClick={this.toggleNavbar}>
                     Wetter
                   </NavLink>
                 </li>
