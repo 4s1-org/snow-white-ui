@@ -49,7 +49,7 @@ class WeatherWidget extends React.Component<IProps, IState> {
                 <br />
                 <img src={`weathericons/${info.icon}.png`} alt="" />
                 <br />
-                {Math.round(info.temperature)}&deg / {Math.round(info.temperatureFeelsLike)}&deg
+                {Math.round(info.temperature)}&deg; / {Math.round(info.temperatureFeelsLike)}&deg;
                 <br />
                 {info.conditionText}
               </div>
