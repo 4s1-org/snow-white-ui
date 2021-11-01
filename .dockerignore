@@ -21,3 +21,4 @@ Dockerfile
 *.tar.gz
 **/.env
 data/
+build/
