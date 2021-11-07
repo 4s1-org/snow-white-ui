@@ -17,7 +17,6 @@
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.ts\"",
-    "preinstall": "npx only-allow pnpm",
     "lbt": "npm run lint && npm run build && npm run test",
     "lint": "eslint --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
@@ -27,6 +26,7 @@
     "release:minor": "pnpm run release -- --release-as minor",
     "release:patch": "pnpm run release -- --release-as patch",
     "start": "PORT=3001 SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "start:prod": "http-server build -p 3001",
     "test": "echo no tests available"
   },
   "browserslist": {
@@ -51,6 +51,7 @@
     "@testing-library/user-event": "13.5.0",
     "axios": "0.24.0",
     "bootstrap": "4.6.1",
+    "http-server": "^14.0.0",
     "moment": "2.29.1",
     "moment-timezone": "0.5.33",
     "react": "17.0.2",
