@@ -14,8 +14,7 @@ COPY .eslintrc.yaml     .
 COPY src/    ./src/
 COPY public/ ./public/
 
-RUN ls -la
 RUN pnpm run build
 
 EXPOSE 3001
-CMD ["cd /app", "http-server -p 3001"]
+CMD ["http-server", "build", "-p", "3001"]
