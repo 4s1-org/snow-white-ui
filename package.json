@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "Steffen <steffen@4s1.de>",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "eject": "react-scripts eject",
