@@ -21,7 +21,7 @@ specifiers:
   eslint: 8.2.0
   husky: 7.0.4
   moment: 2.29.1
-  moment-timezone: 0.5.33
+  moment-timezone: 0.5.34
   prettier: 2.4.1
   react: 17.0.2
   react-dom: 17.0.2
@@ -42,7 +42,7 @@ dependencies:
   axios: 0.24.0
   bootstrap: 4.6.1
   moment: 2.29.1
-  moment-timezone: 0.5.33
+  moment-timezone: 0.5.34
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-router-dom: 5.3.0_react@17.0.2
@@ -8745,8 +8745,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /moment-timezone/0.5.33:
-    resolution: {integrity: sha512-PTc2vcT8K9J5/9rDEPe5czSIKgLoGsH8UNpA4qZTVw0Vd/Uz19geE9abbIOQKaAQFcnQ3v5YEXrbSc5BpshH+w==}
+  /moment-timezone/0.5.34:
+    resolution: {integrity: sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==}
     dependencies:
       moment: 2.29.1
     dev: false
