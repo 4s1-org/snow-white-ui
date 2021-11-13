@@ -2,6 +2,12 @@ stages:
   - validate
   - deploy
 
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    - when: always
+
 validate-job:
   stage: validate
   image: registry.gitlab.com/4s1/docker/node:14-alpine-dev
