@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://gitlab.com/4s1/snow-white/snow-white-ui/compare/v1.0.5...v1.1.0) (2021-11-13)
+
 ## [1.0.5](https://gitlab.com/4s1/snow-white/snow-white-ui/compare/v1.0.4...v1.0.5) (2021-11-07)
 
 ## [1.0.4](https://gitlab.com/4s1/snow-white/snow-white-ui/compare/v1.0.3...v1.0.4) (2021-11-07)
