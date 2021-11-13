@@ -13,7 +13,6 @@ COPY .npmrc           .
 COPY .eslintrc.yaml   .
 COPY src/             ./src/
 COPY public/          ./public/
-
 RUN pnpm run build
 
 # -----------------------------
