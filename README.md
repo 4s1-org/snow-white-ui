@@ -1,4 +1,4 @@
-# Snow White UI
+# Snow White - UI
 
 ## Sonstiges
 
