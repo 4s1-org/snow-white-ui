@@ -71,7 +71,7 @@
     "@types/react-select": "4.0.18",
     "eslint": "8.4.0",
     "husky": "7.0.4",
-    "prettier": "2.5.0",
+    "prettier": "2.5.1",
     "standard-version": "9.3.2",
     "typescript": "4.5.2"
   },
