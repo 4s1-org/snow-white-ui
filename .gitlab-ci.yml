@@ -22,8 +22,6 @@ sonarcloud-check:
     paths:
       - .sonar/cache
   script:
-    - curl --output tsconfig.root.json "https://gitlab.com/4s1/ts-config/-/raw/main/tsconfig-es2020-commonjs.json"
-    - sed -i "s|@4s1/ts-config/tsconfig-react.json|./tsconfig.root.json|" tsconfig.json
     - sonar-scanner
   only:
     - merge_requests
@@ -38,9 +36,6 @@ validate-job:
     key: '$CI_COMMIT_REF_SLUG'
     paths:
       - .pnpm-store
-  before_script:
-    # Access to private packages
-    - echo "//gitlab.com/api/v4/packages/npm/:_authToken=${CI_JOB_TOKEN}" >> .npmrc
   script:
     - pnpm i
     - pnpm run lint
@@ -54,13 +49,7 @@ deploy-job:
     entrypoint: ['']
   rules:
     - if: '$CI_COMMIT_TAG != null'
-  cache:
-    key: '$CI_COMMIT_REF_SLUG'
-    paths:
-      - .pnpm-store
   script:
-    - mkdir -p /kaniko/.docker
-    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"auth\":\"$(echo -n ${CI_REGISTRY_USER}:${CI_REGISTRY_PASSWORD} | base64)\"}}}" > /kaniko/.docker/config.json
     - /kaniko/executor
       --context $CI_PROJECT_DIR
       --dockerfile $CI_PROJECT_DIR/Dockerfile
