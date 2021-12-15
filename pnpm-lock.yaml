@@ -1,9 +1,9 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@4s1/eslint-config': ^3.4.0
-  '@4s1/snow-white-shared': ^5.1.0
-  '@4s1/ts-config': ^1.4.0
+  '@4s1/eslint-config': 3.4.0
+  '@4s1/snow-white-shared': 5.1.0
+  '@4s1/ts-config': 1.4.0
   '@commitlint/cli': 15.0.0
   '@commitlint/config-conventional': 15.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
