@@ -3,15 +3,15 @@ stages:
   - sonar
   - deploy
 
-variables:
-  SONAR_USER_HOME: '${CI_PROJECT_DIR}/.sonar' # Defines the location of the analysis task cache
-  GIT_DEPTH: '0' # Tells git to fetch all the branches of the project, required by the analysis task
-
 workflow:
   rules:
     - if: $CI_MERGE_REQUEST_ID
       when: never
     - when: always
+
+variables:
+  SONAR_USER_HOME: '${CI_PROJECT_DIR}/.sonar' # Defines the location of the analysis task cache
+  GIT_DEPTH: '0' # Tells git to fetch all the branches of the project, required by the analysis task
 
 validate-job:
   stage: validate
@@ -22,11 +22,15 @@ validate-job:
     key: '$CI_COMMIT_REF_SLUG'
     paths:
       - .pnpm-store
+  artifacts:
+    paths:
+      - coverage/
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
   script:
     - pnpm i
     - pnpm run lint
     - pnpm run build
-    #- pnpm run test
+    #- pnpm run test:cov
 
 sonarcloud-check:
   stage: sonar

@@ -7,3 +7,4 @@
 *.tar.gz
 /.pnpm-debug.log
 /.env
+/coverage/
