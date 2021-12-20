@@ -42,8 +42,9 @@ sonarcloud-check:
     paths:
       - .sonar/cache
   script:
-    - curl --output tsconfig.root.json "https://gitlab.com/4s1/ts-config/-/raw/main/tsconfig-react.json"
-    - sed -i "s|@4s1/ts-config/tsconfig-react.json|./tsconfig.root.json|" tsconfig.json
+    - tsconfig_base=$(sed -n 's|.*"@4s1/ts-config/\([^;]*\)".*|\1|p' tsconfig.json)
+    - curl --output tsconfig.gitlab.json "https://gitlab.com/4s1/ts-config/-/raw/main/${tsconfig_base}"
+    - sed -i "s|@4s1/ts-config/${tsconfig_base}|./tsconfig.gitlab.json|" tsconfig.json
     - sonar-scanner
   only:
     - merge_requests
