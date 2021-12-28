@@ -4,7 +4,7 @@ specifiers:
   '@4s1/eslint-config': 3.5.0
   '@4s1/snow-white-shared': 5.1.0
   '@4s1/ts-config': 1.4.0
-  '@commitlint/cli': 16.0.0
+  '@commitlint/cli': 16.0.1
   '@commitlint/config-conventional': 16.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
@@ -56,7 +56,7 @@ dependencies:
 devDependencies:
   '@4s1/eslint-config': 3.5.0_ba774bd13ac984de53bb542ab42931b7
   '@4s1/ts-config': 1.4.0
-  '@commitlint/cli': 16.0.0_@types+node@14.18.3
+  '@commitlint/cli': 16.0.1_@types+node@14.18.3
   '@commitlint/config-conventional': 16.0.0
   '@types/jest': 27.0.3
   '@types/node': 14.18.3
@@ -1558,8 +1558,8 @@ packages:
       minimist: 1.2.5
     dev: false
 
-  /@commitlint/cli/16.0.0_@types+node@14.18.3:
-    resolution: {integrity: sha512-MaYQbwsBZ3+OHJQm9cbSMj4P1Eptqqk/p8WY5MTzVZDRei8JcweNaMtwU7P+h9VeBTlFYSn4vkZYiZXzVK2Cww==}
+  /@commitlint/cli/16.0.1_@types+node@14.18.3:
+    resolution: {integrity: sha512-61gGRy65WiVDRsqP0dAR2fAgE3qrTBW3fgz9MySv32y5Ib3ZXXDDq6bGyQqi2dSaPuDYzNCRwwlC7mmQM73T/g==}
     engines: {node: '>=v12'}
     hasBin: true
     dependencies:
