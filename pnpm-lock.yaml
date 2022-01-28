@@ -8,7 +8,7 @@ specifiers:
   '@commitlint/config-conventional': 16.0.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
-  '@fortawesome/react-fontawesome': 0.1.16
+  '@fortawesome/react-fontawesome': 0.1.17
   '@testing-library/react': 12.1.2
   '@testing-library/user-event': 13.5.0
   '@types/jest': 27.4.0
@@ -39,7 +39,7 @@ dependencies:
   '@4s1/snow-white-shared': 5.1.0
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
-  '@fortawesome/react-fontawesome': 0.1.16_f515edce028694561ceb456e3dba224c
+  '@fortawesome/react-fontawesome': 0.1.17_f515edce028694561ceb456e3dba224c
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 13.5.0
   axios: 0.25.0
@@ -1857,14 +1857,14 @@ packages:
       '@fortawesome/fontawesome-common-types': 0.2.36
     dev: false
 
-  /@fortawesome/react-fontawesome/0.1.16_f515edce028694561ceb456e3dba224c:
-    resolution: {integrity: sha512-aLmzDwC9rEOAJv2UJdMns89VZR5Ry4IHu5dQQh24Z/lWKEm44lfQr1UNalZlkUaQN8d155tNh+CS7ntntj1VMA==}
+  /@fortawesome/react-fontawesome/0.1.17_f515edce028694561ceb456e3dba224c:
+    resolution: {integrity: sha512-dX43Z5IvMaW7fwzU8farosYjKNGfRb2HB/DgjVBHeJZ/NSnuuaujPPx0YOdcAq+n3mqn70tyCde2HM1mqbhiuw==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || >=1.3.0-beta1
       react: '>=16.x'
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.36
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
     dev: false
 
@@ -5953,7 +5953,7 @@ packages:
       object.entries: 1.1.4
       object.fromentries: 2.0.4
       object.values: 1.1.5
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       resolve: 2.0.0-next.3
       string.prototype.matchall: 4.0.5
     dev: false
@@ -9337,14 +9337,14 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /mini-create-react-context/0.4.1_prop-types@15.7.2+react@17.0.2:
+  /mini-create-react-context/0.4.1_prop-types@15.8.1+react@17.0.2:
     resolution: {integrity: sha512-YWCYEmd5CQeHGSAKrYvXgmzzkrvssZcuuQDDeqkT+PziKGMgE+0MCCtcKbROzocGBG1meBLl2FotlRwf4gAzbQ==}
     peerDependencies:
       prop-types: ^15.0.0
       react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       '@babel/runtime': 7.14.8
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       tiny-warning: 1.0.3
     dev: false
@@ -10934,6 +10934,14 @@ packages:
       react-is: 16.13.1
     dev: false
 
+  /prop-types/15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
   /proxy-addr/2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
@@ -11136,7 +11144,7 @@ packages:
     peerDependencies:
       react: ^16.3.0 || ^17.0.0
     dependencies:
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
     dev: false
 
@@ -11176,9 +11184,9 @@ packages:
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
-      mini-create-react-context: 0.4.1_prop-types@15.7.2+react@17.0.2
+      mini-create-react-context: 0.4.1_prop-types@15.8.1+react@17.0.2
       path-to-regexp: 1.8.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-is: 16.13.1
       tiny-invariant: 1.1.0
@@ -11305,7 +11313,7 @@ packages:
       '@babel/runtime': 7.14.8
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
