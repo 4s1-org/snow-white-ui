@@ -9,7 +9,6 @@ COPY package.json .
 RUN pnpm install --offline
 
 COPY tsconfig.json .
-COPY .npmrc .
 COPY .eslintrc.yaml .
 COPY src/ ./src/
 COPY public/ ./public/
