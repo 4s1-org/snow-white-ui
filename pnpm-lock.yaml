@@ -17,7 +17,7 @@ specifiers:
   '@types/react-dom': 17.0.11
   '@types/react-router-dom': 5.3.3
   '@types/react-select': 4.0.18
-  axios: 0.25.0
+  axios: 0.26.0
   bootstrap: 4.6.1
   eslint: 8.9.0
   husky: 7.0.4
@@ -42,7 +42,7 @@ dependencies:
   '@fortawesome/react-fontawesome': 0.1.17_4bd8f766d7cd56ce339ee1b51a510026
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 13.5.0
-  axios: 0.25.0
+  axios: 0.26.0
   bootstrap: 4.6.1
   moment: 2.29.1
   moment-timezone: 0.5.34
@@ -3657,10 +3657,10 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /axios/0.25.0:
-    resolution: {integrity: sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==}
+  /axios/0.26.0:
+    resolution: {integrity: sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==}
     dependencies:
-      follow-redirects: 1.14.7_debug@4.3.2
+      follow-redirects: 1.14.8_debug@4.3.2
     transitivePeerDependencies:
       - debug
     dev: false
@@ -6570,8 +6570,8 @@ packages:
       readable-stream: 2.3.7
     dev: false
 
-  /follow-redirects/1.14.7_debug@4.3.2:
-    resolution: {integrity: sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==}
+  /follow-redirects/1.14.8_debug@4.3.2:
+    resolution: {integrity: sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -7220,7 +7220,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.7_debug@4.3.2
+      follow-redirects: 1.14.8_debug@4.3.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
