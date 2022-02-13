@@ -25,9 +25,9 @@
     "release:minor": "pnpm run release -- --release-as minor",
     "release:patch": "pnpm run release -- --release-as patch",
     "start": "PORT=3001 SKIP_PREFLIGHT_CHECK=true react-scripts start",
-    "test": "jest",
-    "test:cov": "pnpm run test -- --coverage",
-    "test:watch": "pnpm run test -- --watch"
+    "test": "echo no test",
+    "test:cov": "echo no test",
+    "test:watch": "echo no tests"
   },
   "browserslist": {
     "production": [
