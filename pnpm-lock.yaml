@@ -13,7 +13,7 @@ specifiers:
   '@testing-library/user-event': 13.5.0
   '@types/jest': 27.4.1
   '@types/node': 14.18.12
-  '@types/react': 17.0.39
+  '@types/react': 17.0.40
   '@types/react-dom': 17.0.13
   '@types/react-router-dom': 5.3.3
   '@types/react-select': 4.0.18
@@ -50,7 +50,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-router-dom: 5.3.0_react@17.0.2
   react-scripts: 4.0.3_react@17.0.2+typescript@4.6.2
-  react-select: 4.3.1_b8fdba992ce7d797017dc07106486496
+  react-select: 4.3.1_f456dfc349ace84b0ea11d9e6e4ef3ab
   web-vitals: 1.1.2
 
 devDependencies:
@@ -60,7 +60,7 @@ devDependencies:
   '@commitlint/config-conventional': 16.2.1
   '@types/jest': 27.4.1
   '@types/node': 14.18.12
-  '@types/react': 17.0.39
+  '@types/react': 17.0.40
   '@types/react-dom': 17.0.13
   '@types/react-router-dom': 5.3.3
   '@types/react-select': 4.0.18
@@ -1754,7 +1754,7 @@ packages:
   /@emotion/memoize/0.7.5:
     resolution: {integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==}
 
-  /@emotion/react/11.4.1_a0c521d4794c7ad97f5f4c1c4a7d5818:
+  /@emotion/react/11.4.1_00d6772dea80510e818fd171caaa025a:
     resolution: {integrity: sha512-pRegcsuGYj4FCdZN6j5vqCALkNytdrKw3TZMekTzNXixRg4wkLsU5QEaBG5LC6l01Vppxlp7FE3aTHpIG5phLg==}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -1772,7 +1772,7 @@ packages:
       '@emotion/sheet': 1.0.2
       '@emotion/utils': 1.0.0
       '@emotion/weak-memoize': 0.2.5
-      '@types/react': 17.0.39
+      '@types/react': 17.0.40
       hoist-non-react-statics: 3.3.2
       react: 17.0.2
     dev: false
@@ -2730,13 +2730,13 @@ packages:
   /@types/react-dom/17.0.13:
     resolution: {integrity: sha512-wEP+B8hzvy6ORDv1QBhcQia4j6ea4SFIBttHYpXKPFZRviBvknq0FRh3VrIxeXUmsPkwuXVZrVGG7KUVONmXCQ==}
     dependencies:
-      '@types/react': 17.0.39
+      '@types/react': 17.0.40
 
   /@types/react-router-dom/5.3.3:
     resolution: {integrity: sha512-kpqnYK4wcdm5UaWI3fLcELopqLrHgLqNsdpHauzlQktfkHL3npOSwtj1Uz9oKBAzs7lFtVkV8j83voAz2D8fhw==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 17.0.39
+      '@types/react': 17.0.40
       '@types/react-router': 5.1.16
     dev: true
 
@@ -2744,14 +2744,14 @@ packages:
     resolution: {integrity: sha512-8d7nR/fNSqlTFGHti0R3F9WwIertOaaA1UEB8/jr5l5mDMOs4CidEgvvYMw4ivqrBK+vtVLxyTj2P+Pr/dtgzg==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 17.0.39
+      '@types/react': 17.0.40
     dev: true
 
   /@types/react-select/4.0.18:
     resolution: {integrity: sha512-uCPRMPshd96BwHuT7oCrFduiv5d6km3VwmtW7rVl9g4XetS3VoJ9nZo540LiwtQgaFcW96POwaxQDZDAyYaepg==}
     dependencies:
       '@emotion/serialize': 1.0.2
-      '@types/react': 17.0.39
+      '@types/react': 17.0.40
       '@types/react-dom': 17.0.13
       '@types/react-transition-group': 4.4.2
     dev: true
@@ -2759,11 +2759,11 @@ packages:
   /@types/react-transition-group/4.4.2:
     resolution: {integrity: sha512-KibDWL6nshuOJ0fu8ll7QnV/LVTo3PzQ9aCPnRUYPfX7eZohHwLIdNHj7pftanREzHNP4/nJa8oeM73uSiavMQ==}
     dependencies:
-      '@types/react': 17.0.39
+      '@types/react': 17.0.40
     dev: true
 
-  /@types/react/17.0.39:
-    resolution: {integrity: sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==}
+  /@types/react/17.0.40:
+    resolution: {integrity: sha512-UrXhD/JyLH+W70nNSufXqMZNuUD2cXHu6UjCllC6pmOQgBX4SGXOH8fjRka0O0Ee0HrFxapDD8Bwn81Kmiz6jQ==}
     dependencies:
       '@types/prop-types': 15.7.4
       '@types/scheduler': 0.16.2
@@ -11268,7 +11268,7 @@ packages:
       - webpack-plugin-serve
     dev: false
 
-  /react-select/4.3.1_b8fdba992ce7d797017dc07106486496:
+  /react-select/4.3.1_f456dfc349ace84b0ea11d9e6e4ef3ab:
     resolution: {integrity: sha512-HBBd0dYwkF5aZk1zP81Wx5UsLIIT2lSvAY2JiJo199LjoLHoivjn9//KsmvQMEFGNhe58xyuOITjfxKCcGc62Q==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -11276,7 +11276,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.14.8
       '@emotion/cache': 11.4.0
-      '@emotion/react': 11.4.1_a0c521d4794c7ad97f5f4c1c4a7d5818
+      '@emotion/react': 11.4.1_00d6772dea80510e818fd171caaa025a
       memoize-one: 5.2.1
       prop-types: 15.7.2
       react: 17.0.2
