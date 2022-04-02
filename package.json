@@ -4,11 +4,11 @@
   "private": true,
   "description": "Snow White - UI",
   "bugs": {
-    "url": "https://gitlab.com/4s1/snow-white-ui/issues"
+    "url": "https://github.com/4s1-org/snow-white-ui/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/4s1/snow-white-ui.git"
+    "url": "https://github.com/4s1-org/snow-white-ui.git"
   },
   "license": "MIT",
   "author": "Steffen <steffen@4s1.de>",

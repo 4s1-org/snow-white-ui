@@ -8,4 +8,3 @@
 /.pnpm-debug.log
 /.env
 /coverage/
-/tsconfig.gitlab.json
