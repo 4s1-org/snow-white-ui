@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/4s1/docker/node:14-alpine AS builder
+FROM ghcr.io/4s1-org/node:14-alpine AS builder
 
 WORKDIR /app
 
