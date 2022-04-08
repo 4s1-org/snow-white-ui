@@ -33,7 +33,7 @@ specifiers:
   standard-version: 9.3.2
   ts-jest: 27.1.4
   typescript: 4.6.3
-  web-vitals: 1.1.2
+  web-vitals: 2.1.4
 
 dependencies:
   '@4s1/snow-white-shared': 5.1.1
@@ -51,7 +51,7 @@ dependencies:
   react-router-dom: 5.3.0_react@17.0.2
   react-scripts: 4.0.3_react@17.0.2+typescript@4.6.3
   react-select: 4.3.1_b49bddbe4b905ced4713cb857cca91fa
-  web-vitals: 1.1.2
+  web-vitals: 2.1.4
 
 devDependencies:
   '@4s1/eslint-config': 3.12.0_1c11022da6bee94acd53a18a58163cda
@@ -13172,8 +13172,8 @@ packages:
       minimalistic-assert: 1.0.1
     dev: false
 
-  /web-vitals/1.1.2:
-    resolution: {integrity: sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==}
+  /web-vitals/2.1.4:
+    resolution: {integrity: sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==}
     dev: false
 
   /webidl-conversions/5.0.0:
