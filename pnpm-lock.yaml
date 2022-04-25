@@ -14,7 +14,7 @@ specifiers:
   '@types/jest': 27.4.1
   '@types/node': 14.18.15
   '@types/react': 17.0.44
-  '@types/react-dom': 17.0.15
+  '@types/react-dom': 17.0.16
   '@types/react-router-dom': 5.3.3
   '@types/react-select': 4.0.18
   axios: 0.26.1
@@ -61,7 +61,7 @@ devDependencies:
   '@types/jest': 27.4.1
   '@types/node': 14.18.15
   '@types/react': 17.0.44
-  '@types/react-dom': 17.0.15
+  '@types/react-dom': 17.0.16
   '@types/react-router-dom': 5.3.3
   '@types/react-select': 4.0.18
   eslint: 8.14.0
@@ -2576,7 +2576,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.14.8
       '@testing-library/dom': 8.5.0
-      '@types/react-dom': 17.0.15
+      '@types/react-dom': 17.0.16
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
@@ -2727,8 +2727,8 @@ packages:
     resolution: {integrity: sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==}
     dev: false
 
-  /@types/react-dom/17.0.15:
-    resolution: {integrity: sha512-Tr9VU9DvNoHDWlmecmcsE5ZZiUkYx+nKBzum4Oxe1K0yJVyBlfbq7H3eXjxXqJczBKqPGq3EgfTru4MgKb9+Yw==}
+  /@types/react-dom/17.0.16:
+    resolution: {integrity: sha512-DWcXf8EbMrO/gWnQU7Z88Ws/p16qxGpPyjTKTpmBSFKeE+HveVubqGO1CVK7FrwlWD5MuOcvh8gtd0/XO38NdQ==}
     dependencies:
       '@types/react': 17.0.44
 
@@ -2752,7 +2752,7 @@ packages:
     dependencies:
       '@emotion/serialize': 1.0.2
       '@types/react': 17.0.44
-      '@types/react-dom': 17.0.15
+      '@types/react-dom': 17.0.16
       '@types/react-transition-group': 4.4.2
     dev: true
 
