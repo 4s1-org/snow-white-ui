@@ -14,7 +14,7 @@
   "author": "Steffen <steffen@4s1.de>",
   "type": "commonjs",
   "scripts": {
-    "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
+    "build": "SKIP_PREFLIGHT_CHECK=true DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.ts\"",
     "lbt": "npm run lint && npm run build && npm run test",
@@ -24,7 +24,7 @@
     "release:major": "pnpm run release -- --release-as major",
     "release:minor": "pnpm run release -- --release-as minor",
     "release:patch": "pnpm run release -- --release-as patch",
-    "start": "PORT=3001 SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "start": "PORT=3001 SKIP_PREFLIGHT_CHECK=true DISABLE_ESLINT_PLUGIN=true react-scripts start",
     "test": "echo no test",
     "test:cov": "echo no test",
     "test:watch": "echo no tests"
@@ -61,7 +61,7 @@
     "web-vitals": "1.1.2"
   },
   "devDependencies": {
-    "@4s1/eslint-config": "3.12.0",
+    "@4s1/eslint-config": "3.13.2",
     "@4s1/ts-config": "1.4.1",
     "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
