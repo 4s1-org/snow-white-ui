@@ -28,7 +28,7 @@ specifiers:
   react-scripts: 4.0.3
   react-select: 4.3.1
   standard-version: 9.5.0
-  ts-jest: 28.0.2
+  ts-jest: 28.0.3
   typescript: 4.6.4
   web-vitals: 1.1.2
 
@@ -63,7 +63,7 @@ devDependencies:
   jest: 28.1.0_@types+node@14.18.18
   prettier: 2.6.2
   standard-version: 9.5.0
-  ts-jest: 28.0.2_863acde8f66073d610345a87311f22cf
+  ts-jest: 28.0.3_863acde8f66073d610345a87311f22cf
   typescript: 4.6.4
 
 packages:
@@ -12979,8 +12979,8 @@ packages:
     resolution: {integrity: sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==}
     dev: false
 
-  /ts-jest/28.0.2_863acde8f66073d610345a87311f22cf:
-    resolution: {integrity: sha512-IOZMb3D0gx6IHO9ywPgiQxJ3Zl4ECylEFwoVpENB55aTn5sdO0Ptyx/7noNBxAaUff708RqQL4XBNxxOVjY0vQ==}
+  /ts-jest/28.0.3_863acde8f66073d610345a87311f22cf:
+    resolution: {integrity: sha512-HzgbEDQ2KgVtDmpXToqAcKTyGHdHsG23i/iUjfxji92G5eT09S1m9UHZd7csF0Bfgh9txM4JzwHnv7r1waFPlw==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
     peerDependencies:
